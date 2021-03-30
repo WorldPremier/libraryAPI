@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav{
+  background-color: rgb(9, 58, 102);
+  
+}
+.footer{
+  background-color: rgb(9, 58, 102);
+}
+
+label{
+  font-weight: bold;
+}
+.footer a{
+  text-decoration: none;
+  color: aliceblue;
+
+}
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.brand{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 45;
+  margin-left: 0;
+  float: left;
+}
+@keyframes example {
+  0%   {color: rgb(245, 144, 77);}
+  25%  {color: yellow;}
+  50%  {color: rgb(219, 72, 62);}
+  100% {color: rgb(66, 151, 66);}
+}
+
+.shadow{
+  box-shadow: 10px 5px 5px black;
+
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 8px 8px 5px rgba(236, 46, 13, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Create the hidden pseudo-element */
+/* include the shadow for the end state */
+.box::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+.box:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.1, 1.1);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+
+
+h3 > a:before {
+  content: "";
+  background: #7FDBFF;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  transform: scaleX(0);
+  animation: 1.4s forwards no-hover-v linear;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@import url(https://fonts.googleapis.com/css?family=Quando);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+}
+html, body {
+  
+  font-family: Quando;
+  font-weight: 300;
+  width: 100%;
+}
+
+.preview{
+ 
+    color: #785fe9;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(176, 251, 188), rgb(176, 251, 188)),
+      linear-gradient(rgb(50, 138, 211), #feb2b2);
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1s linear;
+  }
+  
+  .preview:hover {
+    color: #e93507;
+    background-size: 0 14px, 100% 30px;
+ 
+}
+.behind{
+  position: absolute; 
+  top: 40; 
+  left: 10; 
+  width: 80%;
+  margin-right: 10px;
+
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .resp {
+   font-size: 15px;
+   margin-left: 10px;
+  }
+  .bts{
+    margin-bottom: 20px;
+    width:55px;
+    font-size: 10px;
+  }
+.bt{
+  margin-bottom: 20px;
+  width:50px;
+  font-size: 10px;
+}
+.bookImg{
+  align-items: center;
+}}
+
